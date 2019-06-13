@@ -1,50 +1,60 @@
+Processing processData.C("/home/t3-ku/janguian/NTUPLES/DY2017.root","KUAnalysis","/home/t3-ku/janguian/NTUPLES/SingleAnalyzedNtuple/DY2017ana.root","DY17")...
 Using Tag: DY17
-
-Cutflow for DY17I 0 4670258 932582
-Cutflow for DY17II 1 4670258 932582
-Cutflow for DY17III 2 4670258 932582
+Cutflow for DY17I 0 2371202 461730
+Cutflow for DY17II 1 2371202 461730
+Cutflow for DY17III 2 2371202 461730
 
 Processing processData.C("/home/t3-ku/janguian/NTUPLES/TTbar2017.root","KUAnalysis","/home/t3-ku/janguian/NTUPLES/SingleAnalyzedNtuple/TTbar2017ana.root","TT17")...
 Using Tag: TT17
-
-
-Cutflow for TT17I 0 23644847 2382028
-Cutflow for TT17II 1 23644847 2382028
-Cutflow for TT17III 2 23644847 2382028
+Cutflow for TT17I 0 7335645 695272
+Cutflow for TT17II 1 7335645 695272
+Cutflow for TT17III 2 7335645 695272
 
 Processing processData.C("/home/t3-ku/janguian/NTUPLES/WJets2017.root","KUAnalysis","/home/t3-ku/janguian/NTUPLES/SingleAnalyzedNtuple/WJets2017ana.root","W17")...
 Using Tag: W17
-Cutflow for W17I 0 885639 8778
-Cutflow for W17II 1 885639 8778
-Cutflow for W17III 2 885639 8778
+Processing processData.C("/home/t3-ku/janguian/NTUPLES/WJets2017.root","KUAnalysis","/home/t3-ku/janguian/NTUPLES/SingleAnalyzedNtuple/WJets2017ana.root","W17")...
+Using Tag: W17
+Cutflow for W17I 0 16659970 305335
+Cutflow for W17II 1 16659970 305335
+Cutflow for W17III 2 16659970 305335
+
 
 Processing processData.C("/home/t3-ku/janguian/NTUPLES/WW2017.root","KUAnalysis","/home/t3-ku/janguian/NTUPLES/SingleAnalyzedNtuple/WW2017ana.root","WW17")...
 Using Tag: WW17
-Cutflow for WW17I 0 1338193 61707
-Cutflow for WW17II 1 1338193 61707
-Cutflow for WW17III 2 1338193 61707
+Cutflow for WW17I 0 180928 10812
+Cutflow for WW17II 1 180928 10812
+Cutflow for WW17III 2 180928 10812
 
 Processing processData.C("/home/t3-ku/janguian/NTUPLES/WZ2017.root","KUAnalysis","/home/t3-ku/janguian/NTUPLES/SingleAnalyzedNtuple/WZ2017ana.root","WZ17")...
 Using Tag: WZ17
-Cutflow for WZ17I 0 97071 5785
-Cutflow for WZ17II 1 97071 5785
-Cutflow for WZ17III 2 97071 5785
+Cutflow for WZ17I 0 88923 5785
+Cutflow for WZ17II 1 88923 5785
+Cutflow for WZ17III 2 88923 5785
 
 Processing processData.C("/home/t3-ku/janguian/NTUPLES/TChiWZ.root","600_300","/home/t3-ku/janguian/NTUPLES/SingleAnalyzedNtuple/TChiWZ300ana.root","TCWZ300")...
 Using Tag: TCWZ300
-Cutflow for TCWZ300I 0 31606 15383
-Cutflow for TCWZ300II 1 31606 15383
-Cutflow for TCWZ300III 2 31606 15383
 
 Processing processData.C("/home/t3-ku/janguian/NTUPLES/TChiWZ.root","175_145","/home/t3-ku/janguian/NTUPLES/SingleAnalyzedNtuple/TChiWZ30ana.root","TCWZ30")...
 Using Tag: TCWZ30
-Cutflow for TCWZ30I 0 4315 1467
-Cutflow for TCWZ30II 1 4315 1467
-Cutflow for TCWZ30III 2 4315 1467
 
 Processing processData.C("/home/t3-ku/janguian/NTUPLES/TChiWZ.root","150_147","/home/t3-ku/janguian/NTUPLES/SingleAnalyzedNtuple/TChiWZ3ana.root","TCWZ3")...
 Using Tag: TCWZ3
-Cutflow for TCWZ3I 0 313 16
-Cutflow for TCWZ3II 1 313 16
-Cutflow for TCWZ3III 2 313 16
+
+Processing processData.C("/home/t3-ku/janguian/NTUPLES/TChiWZ.root","SMS_175_145","/home/t3-ku/janguian/NTUPLES/SingleAnalyzedNtuple/TChiWZ30ana.root","TCWZ30")...
+Using Tag: TCWZ30
+Cutflow for TCWZ30I 0 6091 2181
+Cutflow for TCWZ30II 1 6091 2181
+Cutflow for TCWZ30III 2 6091 2181
+
+Processing processData.C("/home/t3-ku/janguian/NTUPLES/TChiWZ.root","SMS_150_147","/home/t3-ku/janguian/NTUPLES/SingleAnalyzedNtuple/TChiWZ3ana.root","TCWZ3")...
+Using Tag: TCWZ3
+Cutflow for TCWZ3I 0 724 44
+Cutflow for TCWZ3II 1 724 44
+Cutflow for TCWZ3III 2 724 44
+
+Processing processData.C("/home/t3-ku/janguian/NTUPLES/TChiWZ.root","SMS_325_25","/home/t3-ku/janguian/NTUPLES/SingleAnalyzedNtuple/TChiWZ300ana.root","TCWZ300")...
+Using Tag: TCWZ300
+Cutflow for TCWZ300I 0 23237 10872
+Cutflow for TCWZ300II 1 23237 10872
+Cutflow for TCWZ300III 2 23237 10872
 

@@ -6,9 +6,9 @@ void processCombineResult(){
 
 	//open relevant root files
 
-	//std::string path = "/home/t3-ku/janguian/NTUPLES/CombinedNtuple/CombineResult.root"
+	std::string path = "/home/t3-ku/janguian/NTUPLES/CombinedNtuple/CombineResult.root";
 	//testpath
-	std::string path = "~/work/research/susy/ewkinos/CombineResult.root";
+//	std::string path = "~/work/research/susy/ewkinos/CombineResult.root";
 	TFile *f = new TFile(path.c_str());
 
 /////PLOTS FOR NON CATEGORICAL BKG AND SIGNAL

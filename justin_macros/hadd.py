@@ -25,11 +25,13 @@ path = ''
 
 # path to the ewkino skims
 if bg2017 == True:
-	path = '/home/t3-ku/janguian/stopNtuple_Skims/All_Bkg_2017/' 
+	#path = '/home/t3-ku/janguian/stopNtuple_Skims/All_Bkg_2017/'
+	path = '/home/t3-ku/janguian/NTUPLES/LocalSkims/Bkg_2017/' 
 elif bg2016 == True:
 	path = '/home/t3-ku/janguian/stopNtuple_Skims/All_Bkg_2016/'
 elif sms == True:
-	path = '/home/t3-ku/janguian/stopNtuple_Skims/All_Sig/'
+	#path = '/home/t3-ku/janguian/stopNtuple_Skims/All_Sig/'
+	path = '/home/t3-ku/janguian/NTUPLES/LocalSkims/Sig_2017/'
 else:
 	path = str(args[1])
 

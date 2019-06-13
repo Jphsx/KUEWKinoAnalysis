@@ -39,14 +39,15 @@ WWDir=['WW_TuneCP5_13TeV-pythia8_Fall17']
 
 WZDir=['WZ_TuneCP5_13TeV-pythia8_Fall17']
 
-TChiWZDir=['SMS-TChiWZ_ZToLL_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_TuneCUETP']
+#TChiWZDir=['SMS-TChiWZ_ZToLL_mZMin-0p1_TuneCP2_13TeV-madgraphMLM-pythia8_Fall17']
+TChiWZDir=['SMS-TChiWZ_ZToLL_mZMin-0p1_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_Summer16']
 
 PathToBkgProcessingDir='/home/t3-ku/crogan/NTUPLES/Processing/All_Bkg_2017/'
 PathToSigProcessingDir='/home/t3-ku/crogan/NTUPLES/Processing/All_Sig/'
 
 
-PathToLocalSigSkims='/home/t3-ku/janguian/NTUPLES/LocalSkims/Bkg_2017/'
-PathToLocalBkgSkims='/home/t3-ku/janguian/NTUPLES/LocalSkims/Sig_2017/'
+PathToLocalSigSkims='/home/t3-ku/janguian/NTUPLES/LocalSkims/Sig_2017/'
+PathToLocalBkgSkims='/home/t3-ku/janguian/NTUPLES/LocalSkims/Bkg_2017/'
 
 #print DYDir
 #print TTDir
@@ -55,21 +56,34 @@ PathToLocalBkgSkims='/home/t3-ku/janguian/NTUPLES/LocalSkims/Sig_2017/'
 #print WZDir
 #print TChiWZDir
 
-BkgDirs= [DYDir, TTDir, WJetsDir, WWDir, WZDir]
+#BkgDirs= [DYDir, TTDir, WJetsDir, WWDir, WZDir]
+BkgDirs=[]
 SigDirs= [TChiWZDir]
 
 #go to each directory and ls, the ls will contain all filenames, hadd all files into a file which is the directory name + .root
 for dirlist in BkgDirs:
 	for idir in dirlist:
 		cmd = "ls "+PathToBkgProcessingDir+idir
+		print cmd
 		LS = bash(cmd)
 		LS = bash(cmd)
 		LS = LS[0].split('\n')
 		LS = [f for f in LS if ".root" in f]
 		cmd = "hadd -f "+PathToLocalBkgSkims+idir+".root"
 		for ifile in LS:
-			cmd = cmd + " "+PathToBkgProcesingDir+idir+ifile.rstrip()
+			cmd = cmd + " "+PathToBkgProcessingDir+idir+"/"+ifile.rstrip()
 		print cmd
 		os.system(cmd)
 
-
+for dirlist in SigDirs:
+	for idir in dirlist:
+		cmd = "ls "+PathToSigProcessingDir+idir
+		LS = bash(cmd)
+		LS = bash(cmd)
+		LS = LS[0].split('\n')
+		LS = [f for f in LS if ".root" in f]
+		cmd = "hadd -f "+PathToLocalSigSkims+idir+".root"
+		for ifile in LS:
+			cmd = cmd+ " "+PathToSigProcessingDir+idir+"/"+ifile.rstrip()
+		print cmd
+		os.system(cmd)
