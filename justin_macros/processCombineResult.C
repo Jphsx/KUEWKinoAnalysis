@@ -35,7 +35,7 @@ void processCombineResult(){
 	std::vector<TH1D*> smet{ TCWZ30met, TCWZ300met, TCWZ3met };
 	std::vector<int> scol{8, 9 , 1};
 	std::vector<int> sline{1,1,1};
-	std::vector<std::string> slegdesc{  "175_145", "600_300", "150_147" };
+	std::vector<std::string> slegdesc{  "175_145", "325_25", "150_147" };
 	std::string shead = "";
 
 	plotsuper(smet, scol, sline, slegdesc, shead, "smet", "", 1);
